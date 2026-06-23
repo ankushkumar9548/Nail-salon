@@ -173,15 +173,19 @@ ul {
 }
 
 .section-divider::before {
-    content: '';
+    content: '❤';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg-light);
+    padding: 0 8px;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+}
+
+.bg-light .section-divider::before {
+    background-color: var(--color-secondary);
 }
 
 /* Button Styles (Capsule styled) */
@@ -307,13 +311,18 @@ ul {
     color: var(--color-accent);
 }
 
-/* Navbar container */
-.site-header {
+/* Header wrapper to make both top-bar and nav stick together */
+.header-wrapper {
     position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 1000;
+    width: 100%;
+    box-shadow: var(--box-shadow-sm);
+}
+
+/* Navbar container */
+.site-header {
+    width: 100%;
     background-color: rgba(250, 246, 240, 0.95);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -1403,7 +1412,7 @@ ul {
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .whatsapp-float {
         bottom: 20px;
         left: 20px; /* Shift to left side on mobile to avoid overlap */
@@ -1444,18 +1453,48 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    /* Top Bar Mobile Optimization */
+    .top-info span:nth-child(5),
+    .top-info span:nth-child(4) {
+        display: none; /* Hide address on mobile for spacing */
+    }
+    
+    .top-bar-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
     /* Navbar Mobile */
     .main-nav {
         display: none;
     }
     
-    .btn-nav-cta {
+    /* Hide Book Now button in header on mobile to prevent overflow */
+    .nav-actions .btn {
         display: none;
+    }
+    
+    .navbar-container {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 1.15rem;
+    }
+    
+    .logo-by {
+        font-size: 0.75rem;
     }
     
     .mobile-menu-toggle {
         display: flex;
+    }
+    
+    .mobile-drawer {
+        top: 90px; /* adjusted for top bar + mobile navbar */
+        height: calc(100vh - 90px);
+        padding: 30px 20px;
     }
     
     /* Hero Split Layout on Mobile */
@@ -1562,10 +1601,14 @@ ul {
         --section-padding: 50px 0;
     }
     
+    .google-rating-card {
+        padding: 15px 20px; /* Reduce padding on small screens to prevent horizontal overflow */
+    }
+    
+    /* Keep row alignment but center items on extra small screens */
     .top-bar-container {
-        flex-direction: column;
-        gap: 6px;
-        text-align: center;
+        justify-content: center;
+        gap: 15px;
     }
     
     .hero-title {
