@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
        GALLERY LIGHTBOX MODAL
        ========================================================================== */
-    const galleryItems = document.querySelectorAll('.circle-gallery-item');
+    const galleryItems = document.querySelectorAll('.lookbook-item');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImage');
     const lightboxCaption = document.getElementById('lightboxCaption');
@@ -125,9 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populate images array
     galleryItems.forEach((item, idx) => {
         const imgPath = item.getAttribute('data-image');
-        const imgAlt = item.querySelector('.circle-img').getAttribute('alt');
-        const imgTitle = item.querySelector('.circle-item-title').textContent;
-        imagesList.push({ src: imgPath, alt: imgAlt, title: imgTitle });
+        const imgAlt = item.querySelector('.lookbook-img').getAttribute('alt');
+        imagesList.push({ src: imgPath, alt: imgAlt, title: imgAlt });
 
         item.addEventListener('click', () => {
             currentImgIndex = idx;
@@ -136,10 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const openLightbox = (imageObj) => {
-        lightbox.style.display = 'block';
+        lightbox.style.display = 'flex';
         lightboxImg.src = imageObj.src;
         lightboxImg.alt = imageObj.alt;
-        lightboxCaption.innerHTML = `<strong>${imageObj.title}</strong> — ${imageObj.alt}`;
+        lightboxCaption.innerHTML = `<strong>${imageObj.title}</strong>`;
         document.body.style.overflow = 'hidden'; // prevent page scrolling
     };
 
@@ -171,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keyboard support
     document.addEventListener('keydown', (e) => {
-        if (lightbox.style.display === 'block') {
+        if (lightbox.style.display === 'flex') {
             if (e.key === 'Escape') closeLightbox();
             if (e.key === 'ArrowLeft') showPrevImage();
             if (e.key === 'ArrowRight') showNextImage();
@@ -273,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 timeStyle: 'short'
             });
 
-            let message = `Hi Sadhvi! I'd like to book an appointment at Nails Heaven.\n\n`;
+            let message = `Hi! I'd like to book an appointment at Neha Makeover.\n\n`;
             message += `*Name:* ${name}\n`;
             message += `*Phone:* ${phone}\n`;
             message += `*Service:* ${serviceText}\n`;
@@ -285,8 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Encode message for URL
             const encodedMessage = encodeURIComponent(message);
             
-            // Salon WhatsApp number (918500005216)
-            const whatsappUrl = `https://wa.me/918500005216?text=${encodedMessage}`;
+            // Neha Makeover WhatsApp number
+            const whatsappUrl = `https://wa.me/917906602296?text=${encodedMessage}`;
 
             // Show success status
             formStatus.className = 'form-status success';

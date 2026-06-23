@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nails Heaven by Sadhvi | Premium Nail Salon in Deoband</title>
-    <meta name="description" content="Experience professional nail care, acrylic extensions, and luxury bridal nail art at Nails Heaven by Sadhvi in Deoband, UP. Highly hygienic setup, 4.9-star rating.">
+    <title>NEHA MAKEOVER | Professional Makeup Artist & Salon in Deoband</title>
+    <meta name="description" content="Experience professional makeup, bridal makeovers, elegant henna, hair styling, and luxury nail services at Neha Makeover in Deoband. Highly rated, premium care.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Alex+Brush&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -16,65 +16,50 @@
 </head>
 <body>
 
-    <!-- Header Wrapper to Sticky top bar + navbar together -->
-    <div class="header-wrapper">
-        <!-- Thin Top Bar -->
-        <div class="top-bar">
-            <div class="container top-bar-container">
-                <div class="top-info">
-                    <span><i class="fas fa-phone-alt"></i> <a href="tel:08500005216">085000 05216</a></span>
-                    <span class="top-divider">|</span>
-                    <span><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918500005216?text=Hi!%20I'd%20like%20to%20inquire%20about%20booking%20an%20appointment." target="_blank" rel="noopener noreferrer">WhatsApp</a></span>
-                    <span class="top-divider">|</span>
-                    <span><i class="fas fa-map-marker-alt"></i> Railway Rd, Teachers Colony, Deoband</span>
-                </div>
-                <div class="top-socials">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                </div>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                    <path d="M12 2C11.5 4 10 5.5 8 6C10 6.5 11.5 8 12 10C12.5 8 14 6.5 16 6C14 5.5 12.5 4 12 2Z"/>
+                    <path d="M12 10C11 13 8 15 5 15C8 16 11 18 12 21C13 18 16 16 19 15C16 15 13 13 12 10Z"/>
+                    <circle cx="12" cy="11" r="1.5" fill="#FFF"/>
+                </svg>
+                <span class="logo-text">Neha Makeover</span>
+            </a>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#prices" class="nav-link">Prices</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-capsule btn-primary header-cta">Book Appointment</a>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
-
-        <!-- Header & Navigation -->
-        <header class="site-header">
-            <div class="container navbar-container">
-                <a href="#home" class="logo">
-                    <span class="logo-accent">Nails</span> Heaven <span class="logo-by">by Sadhvi</span>
-                </a>
-                
-                <nav class="main-nav" id="mainNav">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#services" class="nav-link">Services</a></li>
-                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="nav-actions">
-                    <a href="#contact" class="btn btn-capsule btn-primary">Book Now</a>
-                    <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-    </div>
+    </header>
 
     <!-- Mobile Drawer Navigation -->
     <div class="mobile-drawer" id="mobileDrawer">
         <ul class="drawer-list">
             <li><a href="#home" class="drawer-link">Home</a></li>
-            <li><a href="#about" class="drawer-link">About</a></li>
             <li><a href="#services" class="drawer-link">Services</a></li>
+            <li><a href="#prices" class="drawer-link">Prices</a></li>
             <li><a href="#gallery" class="drawer-link">Gallery</a></li>
-            <li><a href="#testimonials" class="drawer-link">Testimonials</a></li>
+            <li><a href="#testimonials" class="drawer-link">Reviews</a></li>
             <li><a href="#contact" class="drawer-link">Contact</a></li>
-            <li><a href="#contact" class="btn btn-capsule drawer-cta">Book Now</a></li>
+            <li><a href="#contact" class="btn btn-capsule drawer-cta">Book Appointment</a></li>
         </ul>
     </div>
 
@@ -83,205 +68,280 @@
 
         <!-- Hero Section -->
         <section id="home" class="hero-section">
-            <div class="container hero-grid">
+            <div class="container">
                 <div class="hero-content">
-                    <div class="badge-wrapper">
-                        <span class="hero-badge"><i class="fas fa-star gold-star"></i> 4.9 Rating (95 Google Reviews)</span>
+                    <div class="welcome-tag">Welcome to <span class="heart-icon">❤</span></div>
+                    <h1 class="hero-title">Neha Beauty <br><span class="text-highlight">Salon</span></h1>
+                    <p class="hero-subtitle">Professional henna, hair treatment, styling, and makeup services for modern women. Experience artistry in every detail.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-capsule btn-primary">Book Now</a>
+                        <a href="#services" class="btn btn-capsule btn-outline">Our Services</a>
                     </div>
-                    <span class="hero-tagline">Ultimate designs for your hands</span>
-                    <h1 class="hero-title">The Luxury of <br><span class="text-serif-italic">Nails Heaven</span></h1>
-                    <p class="hero-subtitle">Step into a sanctuary of beauty and precision. We design classy, trendy, and hygienic nail creations that elevate your personal style.</p>
-                    <div class="hero-ctas">
-                        <a href="#services" class="btn btn-capsule btn-primary">Explore Services</a>
-                        <a href="tel:08500005216" class="btn btn-capsule btn-outline"><i class="fas fa-phone-alt"></i> Call Now</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="assets/hero_bg.png" alt="Nails Heaven Premium Manicure Treatment" class="hero-img">
                 </div>
             </div>
         </section>
 
-        <!-- Highlights & Top Services Section (Cream Pink BG with Scalloped Cards) -->
-        <section id="about" class="highlights-section section-padding">
+        <!-- Features Bar Row -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Professional</h4>
+                            <p>Experienced staff with skill</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Quality Products</h4>
+                            <p>We use high quality hair & beauty</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Clean & Safe</h4>
+                            <p>Hygienic environment for customers</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Customer Satisfaction</h4>
+                            <p>Your beauty is our happiness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services & Prices Section -->
+        <section id="services" class="services-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Why Choose Us</span>
-                    <h2 class="section-title">The Nails Heaven Standard</h2>
+                    <h2 class="section-title">Our Services & Prices</h2>
                     <div class="section-divider"></div>
                 </div>
 
-                <div class="highlights-grid">
-                    <!-- Highlight Card 1 -->
-                    <div class="highlight-card">
-                        <div class="card-img-wrapper">
-                            <img src="assets/about_salon.png" alt="Hygienic Setup" class="card-img">
-                            <!-- Scalloped Divider Overlay -->
-                            <svg class="scallop-divider" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                <path d="M0,10 C5,10 5,7 10,7 C15,7 15,10 20,10 C25,10 25,7 30,7 C35,7 35,10 40,10 C45,10 45,7 50,7 C55,7 55,10 60,10 C65,10 65,7 70,7 C75,7 75,10 80,10 C85,10 85,7 90,7 C95,7 95,10 100,10 L100,10 L0,10 Z" fill="#FDFBF9" />
-                            </svg>
+                <div class="services-mockup-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="assets/about_salon.png" alt="Hair Styling at Neha Makeover" class="service-img">
+                            <span class="service-number">01</span>
                         </div>
-                        <div class="card-icon-container">
-                            <div class="card-icon-circle">
-                                <i class="fas fa-pump-soap"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Highly Hygienic Setup</h3>
-                            <p class="card-desc">We prioritize your health. Every tool is medically sterilized, and our workspaces are thoroughly sanitized after every client.</p>
-                            <span class="card-price">Certified Clean</span>
+                        <div class="service-body">
+                            <h3 class="service-name">Styling</h3>
+                            <p class="service-desc">Traditional & modern styling techniques for all hair types.</p>
+                            <span class="service-price-pill">Rs 1000 - 3000</span>
                         </div>
                     </div>
 
-                    <!-- Highlight Card 2 -->
-                    <div class="highlight-card">
-                        <div class="card-img-wrapper">
-                            <img src="assets/gallery_ruby.png" alt="Expert Technicians" class="card-img">
-                            <!-- Scalloped Divider Overlay -->
-                            <svg class="scallop-divider" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                <path d="M0,10 C5,10 5,7 10,7 C15,7 15,10 20,10 C25,10 25,7 30,7 C35,7 35,10 40,10 C45,10 45,7 50,7 C55,7 55,10 60,10 C65,10 65,7 70,7 C75,7 75,10 80,10 C85,10 85,7 90,7 C95,7 95,10 100,10 L100,10 L0,10 Z" fill="#FDFBF9" />
-                            </svg>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="assets/gallery_bridal.png" alt="Bridal Henna Mehendi at Neha Makeover" class="service-img">
+                            <span class="service-number">02</span>
                         </div>
-                        <div class="card-icon-container">
-                            <div class="card-icon-circle">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Expert Technicians</h3>
-                            <p class="card-desc">Guided by Sadhvi's professional eye, our team executes detailed shapes, clean cuticles, and structural enhancements with care.</p>
-                            <span class="card-price">Professional Care</span>
+                        <div class="service-body">
+                            <h3 class="service-name">Mehendi</h3>
+                            <p class="service-desc">Elegant bridal Mehendi designs for a perfect wedding look.</p>
+                            <span class="service-price-pill">Rs 200 - 2000</span>
                         </div>
                     </div>
 
-                    <!-- Highlight Card 3 -->
-                    <div class="highlight-card">
-                        <div class="card-img-wrapper">
-                            <img src="assets/gallery_neutral.png" alt="Trendy Designs" class="card-img">
-                            <!-- Scalloped Divider Overlay -->
-                            <svg class="scallop-divider" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                <path d="M0,10 C5,10 5,7 10,7 C15,7 15,10 20,10 C25,10 25,7 30,7 C35,7 35,10 40,10 C45,10 45,7 50,7 C55,7 55,10 60,10 C65,10 65,7 70,7 C75,7 75,10 80,10 C85,10 85,7 90,7 C95,7 95,10 100,10 L100,10 L0,10 Z" fill="#FDFBF9" />
-                            </svg>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="assets/gallery_ruby.png" alt="Professional Makeup at Neha Makeover" class="service-img">
+                            <span class="service-number">03</span>
                         </div>
-                        <div class="card-icon-container">
-                            <div class="card-icon-circle">
-                                <i class="fas fa-wand-magic-sparkles"></i>
-                            </div>
+                        <div class="service-body">
+                            <h3 class="service-name">Makeup</h3>
+                            <p class="service-desc">Professional makeup application for any special event or wedding.</p>
+                            <span class="service-price-pill">Rs 1500 - 4000</span>
                         </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Classy & Trendy Designs</h3>
-                            <p class="card-desc">From subtle chic to intricate bridal mehndi overlays, we stay ahead of current trends to create designs unique to you.</p>
-                            <span class="card-price">Artistry & Style</span>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="assets/gallery_neutral.png" alt="Facial Treatments at Neha Makeover" class="service-img">
+                            <span class="service-number">04</span>
                         </div>
+                        <div class="service-body">
+                            <h3 class="service-name">Facial</h3>
+                            <p class="service-desc">Deep cleansing and refreshing professional face treatment.</p>
+                            <span class="service-price-pill">Rs 800 - 1500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-container text-center">
+                    <a href="#prices" class="btn btn-capsule btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offer Banner -->
+        <section class="special-offer-section">
+            <div class="container">
+                <div class="offer-banner-card">
+                    <div class="offer-text-side">
+                        <span class="offer-badge">Special Offer For You!</span>
+                        <p class="offer-desc">Join our community of beautiful women and enjoy a premium experience.</p>
+                    </div>
+                    <div class="offer-action-side">
+                        <span class="offer-discount">20% OFF</span>
+                        <a href="https://wa.me/917906602296?text=Hi!%20I'd%20like%20to%20claim%20the%2020%25%20off%20special%20offer%20for%20my%20first%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-capsule btn-white">Get 20% Off Your First Visit</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Menu Section (Grid list) -->
-        <section id="services" class="services-section section-padding bg-light">
+        <!-- Additional Services Section -->
+        <section class="additional-services-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Our Menu</span>
-                    <h2 class="section-title">Nail Care & Artistry</h2>
+                    <h2 class="section-title">Additional Services</h2>
                     <div class="section-divider"></div>
                 </div>
 
-                <div class="services-menu-grid">
-                    <!-- Service Item 1 -->
-                    <div class="menu-service-card">
-                        <div class="menu-service-header">
-                            <span class="menu-service-icon"><i class="fas fa-crown"></i></span>
-                            <h3 class="menu-service-name">Bridal Services</h3>
-                            <span class="menu-service-price">Premium Range</span>
+                <div class="additional-services-grid">
+                    <!-- Additional Service 1 -->
+                    <div class="additional-card">
+                        <div class="add-icon-circle">
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <p class="menu-service-desc">Intricate luxury designs custom-tailored for brides. We align nail art with your bridal theme and traditional mehndi patterns.</p>
-                        <a href="#contact" class="btn btn-text-gold">Inquire/Book <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="add-title">Bridal Makeup</h3>
+                        <p class="add-desc">Glamorous makeup looks for your most special day.</p>
+                        <span class="add-price">Rs 5000 - Rs 8000</span>
                     </div>
 
-                    <!-- Service Item 2 -->
-                    <div class="menu-service-card">
-                        <div class="menu-service-header">
-                            <span class="menu-service-icon"><i class="fas fa-gem"></i></span>
-                            <h3 class="menu-service-name">Acrylic Nails</h3>
-                            <span class="menu-service-price">Elite Finish</span>
+                    <!-- Additional Service 2 -->
+                    <div class="additional-card">
+                        <div class="add-icon-circle">
+                            <i class="fas fa-spa"></i>
                         </div>
-                        <p class="menu-service-desc">Strong, flawless overlays that give you desired length and durability. Custom shapes available from classic coffin to almond.</p>
-                        <a href="#contact" class="btn btn-text-gold">Inquire/Book <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="add-title">Radiant Facial</h3>
+                        <p class="add-desc">Deep clean & facial for a natural glowing skin.</p>
+                        <span class="add-price">Rs 2500 - Rs 4000</span>
                     </div>
 
-                    <!-- Service Item 3 -->
-                    <div class="menu-service-card">
-                        <div class="menu-service-header">
-                            <span class="menu-service-icon"><i class="fas fa-paint-brush"></i></span>
-                            <h3 class="menu-service-name">Nail Art & Decorations</h3>
-                            <span class="menu-service-price">Trendy / Custom</span>
+                    <!-- Additional Service 3 -->
+                    <div class="additional-card">
+                        <div class="add-icon-circle">
+                            <i class="fas fa-magic"></i>
                         </div>
-                        <p class="menu-service-desc">Hand-painted extensions, chrome effects, crystal embellishments, and custom designs created by our visual artists.</p>
-                        <a href="#contact" class="btn btn-text-gold">Inquire/Book <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- Service Item 4 -->
-                    <div class="menu-service-card">
-                        <div class="menu-service-header">
-                            <span class="menu-service-icon"><i class="fas fa-wand-magic-sparkles"></i></span>
-                            <h3 class="menu-service-name">Nail Extensions</h3>
-                            <span class="menu-service-price">Classic & Modern</span>
-                        </div>
-                        <p class="menu-service-desc">High-grade gel and tips overlays designed to feel lightweight, natural, and structurally perfect for weeks.</p>
-                        <a href="#contact" class="btn btn-text-gold">Inquire/Book <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="add-title">Spa Pedicure</h3>
+                        <p class="add-desc">Relaxing foot massage and complete nail care.</p>
+                        <span class="add-price">Rs 2000 - Rs 3500</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Circle Lookbook / Gallery Section (Quiets Sen style in mockup) -->
+        <!-- Cilaan (Henna) Prices Section -->
+        <section id="prices" class="henna-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Cilaan (Henna) Prices</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="henna-prices-grid">
+                    <!-- Henna Item 1 -->
+                    <div class="henna-card">
+                        <div class="henna-img-wrapper">
+                            <img src="assets/gallery_bridal.png" alt="Black Henna Designs" class="henna-img">
+                        </div>
+                        <div class="henna-content">
+                            <h3 class="henna-title">Cilaan Madow (Black Henna)</h3>
+                            <p class="henna-desc">Beautiful, high-contrast black henna designs for hands and feet. Lasts longer and looks bold.</p>
+                            <a href="#contact" class="henna-price-btn">Rs 1000 - 2500 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Henna Item 2 -->
+                    <div class="henna-card">
+                        <div class="henna-img-wrapper">
+                            <img src="assets/gallery_neutral.png" alt="Red Henna Designs" class="henna-img">
+                        </div>
+                        <div class="henna-content">
+                            <h3 class="henna-title">Cilaan Gaduud (Red Henna)</h3>
+                            <p class="henna-desc">Traditional red henna designs for a natural, classic look. Perfect for weddings and celebrations.</p>
+                            <a href="#contact" class="henna-price-btn">Rs 2000 - 5000 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery / Lookbook Section -->
         <section id="gallery" class="gallery-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Visual Lookbook</span>
-                    <h2 class="section-title">Client Gallery</h2>
+                    <h2 class="section-title">Our Work Gallery</h2>
                     <div class="section-divider"></div>
                 </div>
 
-                <div class="circle-gallery-grid">
-                    <!-- Circle Gallery Item 1 -->
-                    <div class="circle-gallery-item" data-image="assets/gallery_bridal.png">
-                        <div class="circle-img-wrapper">
-                            <img src="assets/gallery_bridal.png" alt="Intricate red and gold glitter bridal nail art with matching bridal mehndi" class="circle-img">
-                            <div class="circle-hover-overlay">
-                                <span class="circle-zoom-icon"><i class="fas fa-expand"></i></span>
-                            </div>
+                <div class="lookbook-gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="lookbook-item" data-image="assets/gallery_bridal.png">
+                        <img src="assets/gallery_bridal.png" alt="Elegant Bridal Henna & Makeup" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
                         </div>
-                        <h3 class="circle-item-title">Red & Gold Bridal</h3>
-                        <p class="circle-item-desc">Bridal mehndi overlay art</p>
-                        <span class="circle-item-price">Inquire</span>
                     </div>
 
-                    <!-- Circle Gallery Item 2 -->
-                    <div class="circle-gallery-item" data-image="assets/gallery_ruby.png">
-                        <div class="circle-img-wrapper">
-                            <img src="assets/gallery_ruby.png" alt="Long elegant ruby red nails with crystal/holographic accents and a gold ring aesthetic" class="circle-img">
-                            <div class="circle-hover-overlay">
-                                <span class="circle-zoom-icon"><i class="fas fa-expand"></i></span>
-                            </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="lookbook-item" data-image="assets/gallery_ruby.png">
+                        <img src="assets/gallery_ruby.png" alt="Glamorous Ruby Red Makeup Look" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
                         </div>
-                        <h3 class="circle-item-title">Ruby Red Elegance</h3>
-                        <p class="circle-item-desc">Crystal & holographic accents</p>
-                        <span class="circle-item-price">Inquire</span>
                     </div>
 
-                    <!-- Circle Gallery Item 3 -->
-                    <div class="circle-gallery-item" data-image="assets/gallery_neutral.png">
-                        <div class="circle-img-wrapper">
-                            <img src="assets/gallery_neutral.png" alt="Premium neutral/brown tone elegant nail extensions overlaying mehndi patterns" class="circle-img">
-                            <div class="circle-hover-overlay">
-                                <span class="circle-zoom-icon"><i class="fas fa-expand"></i></span>
-                            </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="lookbook-item" data-image="assets/gallery_neutral.png">
+                        <img src="assets/gallery_neutral.png" alt="Natural Elegant Party Makeover" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
                         </div>
-                        <h3 class="circle-item-title">Neutral Extensions</h3>
-                        <p class="circle-item-desc">Gel overlay with neutral tones</p>
-                        <span class="circle-item-price">Inquire</span>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="lookbook-item" data-image="assets/about_salon.png">
+                        <img src="assets/about_salon.png" alt="Hair styling session close-up" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="lookbook-item" data-image="assets/gallery_bridal.png">
+                        <img src="assets/gallery_bridal.png" alt="Intricate Henna details on hands" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="lookbook-item" data-image="assets/gallery_ruby.png">
+                        <img src="assets/gallery_ruby.png" alt="Professional makeup finish" class="lookbook-img">
+                        <div class="lookbook-overlay">
+                            <i class="fas fa-expand"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,8 +360,7 @@
         <section id="testimonials" class="testimonials-section section-padding bg-light">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Client Praise</span>
-                    <h2 class="section-title">Verified Reviews</h2>
+                    <h2 class="section-title">Google Reviews</h2>
                     <div class="section-divider"></div>
                 </div>
 
@@ -314,18 +373,18 @@
                                 <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
                                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
                             </svg>
-                            <span>Google Reviews</span>
+                            <span>NEHA MAKEOVER</span>
                         </div>
                         <div class="rating-stars">
-                            <span class="stars-val">4.9</span>
+                            <span class="stars-val">4.1</span>
                             <span class="stars-icons">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
                             </span>
-                            <span class="reviews-count">(95 Reviews)</span>
+                            <span class="reviews-count">(20 Google Reviews)</span>
                         </div>
                     </div>
                 </div>
@@ -337,22 +396,22 @@
                             <div class="client-rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"My nails were done by her, and you can truly see the expertise in the work. Very professional, hygienic, and the final result was exactly what I wanted. Highly recommended!"</p>
+                            <p class="testimonial-text">"Neha ma'am is very polite or professional with their customers and staff also."</p>
                             <div class="client-details">
-                                <span class="client-name">Local Guide</span>
-                                <span class="client-platform">Verified Google User</span>
+                                <span class="client-name">Anokhi Tyagi</span>
+                                <span class="client-platform">Verified Google Reviewer</span>
                             </div>
                         </div>
 
                         <!-- Slide 2 -->
                         <div class="testimonial-card">
                             <div class="client-rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"...better than I expected. Absolutely loved loved the nails. Very hygienic setup and great customer service. Highly recommended for anyone who loves classy and trendy nail art..."</p>
+                            <p class="testimonial-text">"Obviously nice makeup...but poor service and worst management."</p>
                             <div class="client-details">
-                                <span class="client-name">Satisfied Client</span>
-                                <span class="client-platform">Verified Google User</span>
+                                <span class="client-name">Deepshikha Sharma</span>
+                                <span class="client-platform">Verified Google Reviewer</span>
                             </div>
                         </div>
 
@@ -361,10 +420,10 @@
                             <div class="client-rating">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"Best experience for my wife, best nail art done, excellent service. highly recommended."</p>
+                            <p class="testimonial-text">"She is genius .she is best makeup artist."</p>
                             <div class="client-details">
-                                <span class="client-name">Happy Spouse</span>
-                                <span class="client-platform">Verified Google User</span>
+                                <span class="client-name">Simmi Bhero</span>
+                                <span class="client-platform">Verified Google Reviewer</span>
                             </div>
                         </div>
                     </div>
@@ -382,7 +441,6 @@
         <section id="contact" class="contact-section section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Get in Touch</span>
                     <h2 class="section-title">Book An Appointment</h2>
                     <div class="section-divider"></div>
                 </div>
@@ -391,7 +449,7 @@
                     <!-- Form Container -->
                     <div class="contact-form-container">
                         <h3 class="contact-subheading">Inquiry & Reservation Form</h3>
-                        <p class="contact-form-desc">Fill out the details below, and our team will contact you shortly to confirm your booking.</p>
+                        <p class="contact-form-desc">Fill out the details below to submit your reservation request via WhatsApp. We will reply to confirm your slots.</p>
                         
                         <form id="appointmentForm" class="appointment-form" novalidate>
                             <div class="form-row">
@@ -402,7 +460,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="clientPhone">Phone Number <span class="required">*</span></label>
-                                    <input type="tel" id="clientPhone" name="phone" placeholder="e.g., 085000 05216" required>
+                                    <input type="tel" id="clientPhone" name="phone" placeholder="e.g., 079066 02296" required>
                                     <span class="error-msg" id="phoneError">Valid 10-digit phone number is required</span>
                                 </div>
                             </div>
@@ -412,11 +470,11 @@
                                     <label for="serviceNeeded">Service Needed <span class="required">*</span></label>
                                     <select id="serviceNeeded" name="service" required>
                                         <option value="" disabled selected>Select a Service</option>
-                                        <option value="bridal">Bridal Services</option>
-                                        <option value="acrylic">Acrylic Nails</option>
-                                        <option value="nail-art">Nail Art & Decorations</option>
-                                        <option value="extensions">Nail Extensions</option>
-                                        <option value="other">Other / Custom Query</option>
+                                        <option value="makeup">Bridal / Party Makeup</option>
+                                        <option value="styling">Hair Styling</option>
+                                        <option value="mehendi">Mehendi (Henna) Art</option>
+                                        <option value="facial">Facial / Skin Care</option>
+                                        <option value="other">Other / Custom Makeover</option>
                                     </select>
                                     <span class="error-msg" id="serviceError">Please select a service</span>
                                 </div>
@@ -428,8 +486,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="specialNotes">Special Requests / Custom Art Details</label>
-                                <textarea id="specialNotes" name="notes" rows="4" placeholder="Mention preferred shapes, colors, or custom art ideas..."></textarea>
+                                <label for="specialNotes">Special Requests / Makeover Details</label>
+                                <textarea id="specialNotes" name="notes" rows="4" placeholder="Mention skin type, hair preferences, or specific styling ideas..."></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-capsule btn-primary btn-submit"><i class="fab fa-whatsapp"></i> Book Appointment on WhatsApp</button>
@@ -437,57 +495,18 @@
                         </form>
                     </div>
 
-                    <!-- Contact Details & Map -->
+                    <!-- Contact Map Wrapper -->
                     <div class="contact-details-container">
-                        <div class="details-card">
-                            <h3 class="contact-subheading">Contact Information</h3>
-                            
-                            <ul class="details-list">
-                                <li class="details-item">
-                                    <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <div class="detail-content">
-                                        <h4>Address</h4>
-                                        <p>Railway Rd, Teachers Colony, Deoband, Uttar Pradesh 247554</p>
-                                    </div>
-                                </li>
-
-                                <li class="details-item">
-                                    <div class="detail-icon"><i class="fas fa-phone-alt"></i></div>
-                                    <div class="detail-content">
-                                        <h4>Phone Number</h4>
-                                        <p><a href="tel:08500005216" class="link-hover-gold">085000 05216</a></p>
-                                    </div>
-                                </li>
-
-                                <li class="details-item">
-                                    <div class="detail-icon"><i class="fab fa-whatsapp"></i></div>
-                                    <div class="detail-content">
-                                        <h4>WhatsApp Us</h4>
-                                        <p><a href="https://wa.me/918500005216?text=Hi!%20I'd%20like%20to%20inquire%20about%20booking%20an%20appointment." target="_blank" rel="noopener noreferrer" class="link-hover-gold">Message on WhatsApp</a></p>
-                                    </div>
-                                </li>
-
-                                <li class="details-item">
-                                    <div class="detail-icon"><i class="fas fa-clock"></i></div>
-                                    <div class="detail-content">
-                                        <h4>Salon Hours</h4>
-                                        <p>Open daily: 10:00 AM - 10:00 PM</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Map Frame -->
                         <div class="map-wrapper">
                             <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.5878415053077!2d77.6749969116345!3d29.29654157521743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c1ba2e316719b%3A0xe54e60408ca4ce90!2sRailway%20Rd%2C%20Deoband%2C%20Uttar%20Pradesh%20247554!5e0!3m2!1sen!2sin!4v1719200000000!5m2!1sen!2sin" 
                                 width="100%" 
-                                height="280" 
-                                style="border:0;" 
+                                height="450" 
+                                style="border:0; border-radius: var(--border-radius-md);" 
                                 allowfullscreen="" 
                                 loading="lazy" 
                                 referrerpolicy="no-referrer-when-downgrade"
-                                title="Nails Heaven Deoband Location Map">
+                                title="Neha Makeover Deoband Location Map">
                             </iframe>
                         </div>
                     </div>
@@ -499,31 +518,64 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-left">
-                <a href="#home" class="logo logo-footer">
-                    <span class="logo-accent">Nails</span> Heaven <span class="logo-by">by Sadhvi</span>
-                </a>
-                <p class="footer-copyright">&copy; 2026 Nails Heaven. All Rights Reserved.</p>
-            </div>
-            
-            <div class="footer-middle">
-                <ul class="footer-nav-horizontal">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <div class="container footer-grid-container">
+            <!-- Left Side: Contact details -->
+            <div class="footer-block footer-contact">
+                <h4 class="footer-title">Contact Us</h4>
+                <ul class="footer-contact-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:07906602296" class="link-hover-pink">079066 02296</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/917906602296?text=Hi!%20I'd%20like%20to%20inquire%20about%20booking%20an%20appointment." target="_blank" rel="noopener noreferrer" class="link-hover-pink">Chat with Us</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>PRABHAT NAGAR, Railway Rd, Teachers Colony, Noorpur Dehat, Deoband, Uttar Pradesh 247554</span>
+                    </li>
                 </ul>
             </div>
-
-            <div class="footer-right">
+            
+            <!-- Middle Side: Opening hours -->
+            <div class="footer-block footer-hours">
+                <h4 class="footer-title">Opening Hours</h4>
+                <ul class="footer-hours-list">
+                    <li>
+                        <span class="day">Monday - Saturday:</span>
+                        <span class="hours">9:00 AM - 8:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Sunday:</span>
+                        <span class="hours">Closed (By Appointment)</span>
+                    </li>
+                </ul>
                 <div class="footer-social-icons">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="https://wa.me/918500005216" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="tel:08500005216" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                    <a href="https://wa.me/917906602296" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Purple appointment card -->
+            <div class="footer-block footer-booking-card-wrapper">
+                <div class="footer-booking-card">
+                    <h4>Book Your Appointment</h4>
+                    <p>Get your perfect look by booking your appointment now. We can't wait to see you!</p>
+                    <a href="#contact" class="btn btn-capsule btn-white">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom copyright bar -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p class="copyright-text">Neha Makeover <span class="heart-text">❤</span> &copy; 2026 Neha Makeover. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
                 </div>
                 <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
                     <i class="fas fa-arrow-up"></i>
@@ -533,7 +585,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/918500005216?text=Hi!%20I'd%20like%20to%20inquire%20about%20booking%20an%20appointment%20at%20Nails%20Heaven." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/917906602296?text=Hi!%20I'd%20like%20to%20inquire%20about%20booking%20an%20appointment%20at%20Neha%20Makeover." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     
